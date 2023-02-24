@@ -31,8 +31,8 @@ plt.scatter(X_test, y_test, c = 'r', label = 'Test Data')
 plt.legend()
 plt.grid()
 plt.axis('Equal')
-plt.ylabel('Height')
-plt.xlabel('Weight')
+plt.ylabel('Height (Output)')
+plt.xlabel('Weight (Input)')
 
 # Predicted Data
 plt.scatter(X_test,y_test_hat, c = 'orange', label = 'Prediction')
@@ -46,3 +46,6 @@ plt.plot(x_axis,y_axis)
 plt.text(X_test, (y_test + y_test_hat)/2, s = 'Error')
 error = y_test - y_test_hat
 plt.arrow(X_test[0,0],y_test_hat[0], 0, error[0])
+
+
+
